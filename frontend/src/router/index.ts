@@ -1,12 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Reg from '../components/Reg.vue';
 import Login from '../components/Login.vue';
+import Main from '../components/Main.vue';
 
 const routes = [
   {
     path: '/',
-    name: 'Home', // Используем Reg как временный компонент для главной
-    component: Reg
+    name: 'Home', 
+    component: Main
   },
   {
     path: '/login',
@@ -24,5 +25,7 @@ const router = createRouter({
   history: createWebHistory(),
   routes
 });
+
+
 
 export default router;
