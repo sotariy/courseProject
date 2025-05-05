@@ -1,5 +1,6 @@
 <script setup lang="ts">
-
+import { RouterLink } from 'vue-router';
+defineOptions({ name: 'Footer' });
 </script>
 
 <template>
@@ -7,9 +8,9 @@
   <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
     <div class="md:flex md:justify-between">
       <div class="mb-6 md:mb-0">
-        <a href="../App.vue" class="flex items-center">
-          <img src="/WorkSpace.svg" class="h-8" alt="WorkSpace Logo" />
-        </a>
+        <RouterLink to="/" class="flex items-center">
+          <img src="/WorkSpace.svg" class="h-8 w-auto" alt="WorkSpace Logo" />
+        </RouterLink>
       </div>
       <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
         <div>
